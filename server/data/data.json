@@ -1,0 +1,4 @@
+{
+    "destination":["Paris", "Rome", "London", "New York", "Tokyo", "Berlin", "Barcelona", "Sydney", "Amsterdam", "Dubai"],
+    "vacation_type":["Rest", "Beach", "Parks", "Adventure", "Cultural"]
+}
