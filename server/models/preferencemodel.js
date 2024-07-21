@@ -21,3 +21,6 @@ async function createpreference(userid,startdate,enddate, destination, vacationt
     }
     await connection.end();
 }
+
+
+module.exports = {getpreferencebyuserid, createpreference};
