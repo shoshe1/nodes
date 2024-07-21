@@ -19,7 +19,7 @@ async function updatepreference(req, res) {
         res.status(200).json({message: 'Preferences updated successfully'});
     } catch (error) {
         console.error(error);
-        res.status(500).json({message: 'Internal server error'});
+        res.status(500).json({message: 'preferences controller not updated. Internal server error'});
     }
 }
 module.exports = {getpreferencesbyuserid, updatepreference}

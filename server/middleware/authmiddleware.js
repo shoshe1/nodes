@@ -12,7 +12,7 @@ async function authenticateuser(req, res, next) {
         next();
     } catch (error) {
         console.error(error);
-        res.status(500).json({message: 'Internal server error'});
+        res.status(500).json({message: 'authentication middleware error. Internal server error'});
     }
 }
 
