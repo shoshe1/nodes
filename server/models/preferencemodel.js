@@ -23,4 +23,16 @@ async function createpreference(userid,startdate,enddate, destination, vacationt
 }
 
 
-module.exports = {getpreferencebyuserid, createpreference};
+async function getallpreferences() {
+    try{
+        const preferences = await getallpreferences();
+        res.status(200).json(preferences);
+    } catch (error) {
+        console.error('error in get all preferences',error);    
+        res.status(500).json({message: 'Internal server error'});
+    }
+
+}
+
+
+module.exports = {getpreferencebyuserid, createpreference , getallpreferences};
